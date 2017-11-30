@@ -13,7 +13,7 @@ const tsLoaderConfiguration = {
         allowJs: true,
         target: "ES5",
         jsx: "react",
-        outDir: "web"
+        outDir: "webroot"
       }
     }
   }
@@ -34,12 +34,12 @@ module.exports = {
   devServer: {
     publicPath: '/',
     port: 5555,
-    contentBase: path.join(__dirname, 'web')
+    contentBase: path.join(__dirname, 'webroot')
   },
   entry: './src/web/index.ts',
   output: {
     filename: 'bundle.js',
-    path: path.resolve(__dirname, 'web')
+    path: path.resolve(__dirname, 'webroot')
   },
   module: {
     rules: [

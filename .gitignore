@@ -18,8 +18,8 @@ yarn-error.log*
 
 # distribution
 dist/
-web/bundle.js
-web/images
+webroot/bundle.js
+webroot/images
 
 # build
 build/
