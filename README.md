@@ -18,7 +18,7 @@ https://rn-multi-target-sample.firebaseapp.com/
 
 ### Expo
 
-[![Expo QR Code](./expo.png)
+![Expo QR Code](./expo.png)
 
 https://expo.io/@nkzn/react-native-multi-target-sample
 
