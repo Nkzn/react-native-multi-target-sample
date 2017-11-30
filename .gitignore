@@ -19,3 +19,6 @@ yarn-error.log*
 # TypeScript export
 dist/
 web/bundle.js
+
+# build
+build/
