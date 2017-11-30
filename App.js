@@ -1,1 +1,1 @@
-import "./src/native/App"
+import "./src/native"
