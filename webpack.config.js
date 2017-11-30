@@ -10,6 +10,7 @@ const tsLoaderConfiguration = {
     loader: 'ts-loader',
     options: {
       compilerOptions: { // overwrite tsconfig.json
+        allowJs: true,
         target: "ES5",
         jsx: "react",
         outDir: "web"
