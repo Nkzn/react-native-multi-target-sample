@@ -1,6 +1,7 @@
 import * as React from "react";
 import { View } from "react-native";
 import Product from "./Product";
+import Sound from "./Sound";
 
 const products = [
   { name: "AppCode", source: require("../../assets/images/appcode.png") },
@@ -17,8 +18,19 @@ const products = [
   { name: "WebStorm", source: require("../../assets/images/webstorm.png") },
 ];
 
-export default () => (
-  <View>
-    { products.map( product => <Product key={product.name} title={product.name} source={product.source} />) }
-  </View>
-);
+export default class Products extends React.Component<any> {
+
+  sound = new Sound();
+
+  async onPress() {
+    this.sound.play();
+  }
+
+  render() {
+    return (
+      <View>
+        { products.map( product => <Product key={product.name} title={product.name} source={product.source} onPress={() => this.onPress()} />) }
+      </View>
+    );
+  }
+}

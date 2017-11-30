@@ -4,10 +4,11 @@ import { View, Text, TouchableOpacity, Image, ImageRequireSource } from "react-n
 export interface Props {
   source: ImageRequireSource;
   title: string;
+  onPress: () => void;
 }
 
 export default (props: Props) => (
-  <TouchableOpacity>
+  <TouchableOpacity onPress={() => props.onPress()}>
     <View style={{ alignItems: "center" }}>
       <View style={{ alignItems: "center", borderRadius: 4, borderWidth: 0.5, borderColor: "#AAA", marginVertical: 4, width: 200, paddingVertical: 8 }}>
         <Image source={props.source} style={{ width: 100, height: 100 }} />

@@ -13,7 +13,8 @@ const tsLoaderConfiguration = {
         allowJs: true,
         target: "ES5",
         jsx: "react",
-        outDir: "webroot"
+        outDir: "webroot",
+        lib: ["dom", "ES2017"],
       }
     }
   }
