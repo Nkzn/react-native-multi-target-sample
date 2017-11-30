@@ -21,12 +21,22 @@ const tsLoaderConfiguration = {
 }
 
 // This is needed for webpack to import static images in JavaScript files
-const fileLoaderConfiguration = {
+const fileLoaderImageConfiguration = {
   test: /\.(gif|jpe?g|png|svg)$/,
   use: {
     loader: 'file-loader',
     options: {
       name: './images/[name].[ext]'
+    }
+  }
+};
+
+const fileLoaderSoundConfiguration = {
+  test: /\.(ogg|mp3)$/,
+  use: {
+    loader: 'file-loader',
+    options: {
+      name: './sounds/[name].[ext]'
     }
   }
 };
@@ -45,7 +55,8 @@ module.exports = {
   module: {
     rules: [
       tsLoaderConfiguration,
-      fileLoaderConfiguration
+      fileLoaderImageConfiguration,
+      fileLoaderSoundConfiguration
     ]
   },
 
