@@ -16,6 +16,7 @@
   },
   "main": "./node_modules/react-native-scripts/build/bin/crna-entry.js",
   "scripts": {
+    "build:native": "rm -rf dist/* && tsc -p .",
     "start": "react-native-scripts start",
     "build:web": "webpack -p --config webpack.config.js",
     "start:web": "webpack-dev-server -d --config webpack.config.js --inline --hot --colors",
