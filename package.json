@@ -18,9 +18,9 @@
   "scripts": {
     "build:tsc": "rm -rf dist/* && tsc -p .",
     "start:tsc": "rm -rf dist/* && tsc -w -p .",
-    "start": "react-native-scripts start",
     "build:web": "webpack -p --config webpack.config.js",
     "start:web": "webpack-dev-server -d --config webpack.config.js --inline --hot --colors",
+    "start": "react-native-scripts start",
     "eject": "react-native-scripts eject",
     "android": "react-native-scripts android",
     "ios": "react-native-scripts ios",
