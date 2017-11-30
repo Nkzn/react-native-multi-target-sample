@@ -12,7 +12,15 @@ React Native & Web Development sample.
 Demo
 ----------
 
-* Web: https://rn-multi-target-sample.firebaseapp.com/
+### Web
+
+https://rn-multi-target-sample.firebaseapp.com/
+
+### Expo
+
+[![Expo QR Code](./expo.png)
+
+https://expo.io/@nkzn/react-native-multi-target-sample
 
 Getting Started
 ----------
