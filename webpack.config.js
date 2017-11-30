@@ -35,7 +35,7 @@ module.exports = {
     port: 5555,
     contentBase: path.join(__dirname, 'web')
   },
-  entry: './src/web/index.js',
+  entry: './src/web/index.ts',
   output: {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'web')
@@ -60,7 +60,7 @@ module.exports = {
     // If you're working on a multi-platform React Native app, web-specific
     // module implementations should be written in files using the extension
     // `.web.js`.
-    extensions: [ '.web.js', '.js' ],
+    extensions: [ '.web.js', '.js', '.ts', '.web.ts', '.tsx', '.web.tsx' ],
     alias: {
       'react-native': 'react-native-web'
     }
