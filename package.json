@@ -16,6 +16,7 @@
   },
   "main": "./node_modules/react-native-scripts/build/bin/crna-entry.js",
   "scripts": {
+    "deploy": "yarn build:web && firebase deploy",
     "build:tsc": "rm -rf dist/* && tsc -p .",
     "start:tsc": "rm -rf dist/* && tsc -w -p .",
     "build:web": "webpack -p --config webpack.config.js",

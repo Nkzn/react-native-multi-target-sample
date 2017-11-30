@@ -9,6 +9,11 @@ React Native & Web Development sample.
 * Platform Specific Entry Point
 * Shared Directory
 
+Demo
+----------
+
+* Web: https://rn-multi-target-sample.firebaseapp.com/
+
 Getting Started
 ----------
 
