@@ -16,9 +16,10 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# TypeScript export
+# distribution
 dist/
 web/bundle.js
+web/images
 
 # build
 build/

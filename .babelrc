@@ -1,7 +1,4 @@
 {
-  "plugins": [
-    "react-native-web/babel"
-  ],
   "presets": ["babel-preset-expo"],
   "env": {
     "development": {
