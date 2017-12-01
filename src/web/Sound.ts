@@ -1,7 +1,7 @@
 import { SoundInterface } from "../shared/Sound";
 import "../../assets/sounds/decision22.mp3"; // webpack magic
 
-const _AudioContext = AudioContext || (<any>window).webkitAudioContext;
+const _AudioContext = (<any>window).AudioContext || (<any>window).webkitAudioContext;
 
 export default class SoundWeb implements SoundInterface {
 
@@ -16,8 +16,19 @@ export default class SoundWeb implements SoundInterface {
         if (!this.context) {
             return;
         }
+
         const response = await fetch("/sounds/decision22.mp3");
-        this.buffer = await this.context.decodeAudioData(await response.arrayBuffer());
+
+        const responseBuffer = await response.arrayBuffer();
+
+        this.buffer = <AudioBuffer>await new Promise((resolve, reject) => {
+            // webkitAudioContext does not have Promised decodeAudioData
+            this.context.decodeAudioData(responseBuffer, (buffer: AudioBuffer) => {
+                resolve(buffer);
+            }, (e: any) => {
+                reject(e);
+            });
+        });
     }
 
     async play() {
