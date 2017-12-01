@@ -1,3 +1,6 @@
+// dummy typings for assets
+// ref: https://webpack.js.org/guides/typescript/#importing-other-assets
+
 declare module "*.gif" {
   const content: any;
   export default content;

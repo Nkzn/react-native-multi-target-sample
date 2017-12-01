@@ -1,5 +1,5 @@
 import { SoundInterface } from "../shared/Sound";
-const { Audio } = require("expo");
+import { Audio } from "expo";
 
 export default class SoundNative implements SoundInterface {
     resource: any;
