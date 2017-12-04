@@ -2,7 +2,7 @@ const path = require("path");
 const webpack = require("webpack");
 
 const tsLoaderConfiguration = {
-  test: /\.(tsx?|js)$/,
+  test: /\.(tsx?)$/,
   exclude: [
     "/node_modules/"
   ],
