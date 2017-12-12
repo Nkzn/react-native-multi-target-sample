@@ -16,6 +16,10 @@ Demo
 
 https://rn-multi-target-sample.firebaseapp.com/
 
+### Storybook (Web)
+
+https://rn-multi-target-sample.firebaseapp.com/storybook/
+
 ### Expo
 
 ![Expo QR Code](./expo.png)
