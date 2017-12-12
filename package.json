@@ -20,7 +20,7 @@
   },
   "main": "./node_modules/react-native-scripts/build/bin/crna-entry.js",
   "scripts": {
-    "deploy": "yarn build:web && firebase deploy",
+    "deploy": "yarn build:web && yarn build-storybook && firebase deploy",
     "build:tsc": "rm -rf dist/* && tsc -p .",
     "start:tsc": "rm -rf dist/* && tsc -w -p .",
     "build:web": "webpack -p --progress --config webpack.config.js",
@@ -31,7 +31,7 @@
     "ios": "react-native-scripts ios",
     "test": "node node_modules/jest/bin/jest.js --watch",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook && mv storybook-static webroot/storybook"
   },
   "jest": {
     "preset": "jest-expo"

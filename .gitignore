@@ -21,6 +21,7 @@ dist/
 webroot/bundle.js
 webroot/images
 webroot/sounds
+webroot/storybook
 
 # build
 build/
