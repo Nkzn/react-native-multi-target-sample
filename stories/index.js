@@ -1,13 +1,17 @@
 import React from 'react';
+import { View } from 'react-native'
 
 import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
-import { linkTo } from '@storybook/addon-links';
 
-import { Button, Welcome } from '@storybook/react/demo';
+import Product from "../src/shared/Product";
 
-storiesOf('Welcome', module).add('to Storybook', () => <Welcome showApp={linkTo('Button')} />);
-
-storiesOf('Button', module)
-  .add('with text', () => <Button onClick={action('clicked')}>Hello Button</Button>)
-  .add('with some emoji', () => <Button onClick={action('clicked')}>😀 😎 👍 💯</Button>);
+storiesOf('Product', module)
+  .add('image with text', () => (
+    <View>
+      <Product
+        title="IntelliJ IDEA"
+        source={require("../assets/images/intellij_idea.png")}
+        onPress={action("onPress")} />
+    </View>
+  ));
