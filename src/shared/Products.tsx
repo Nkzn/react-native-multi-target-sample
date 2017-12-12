@@ -28,7 +28,7 @@ export default class Products extends React.Component<any> {
 
   render() {
     return (
-      <View>
+      <View style={{ flex: 1, flexDirection: "row", flexWrap: "wrap", justifyContent: "space-around" }}>
         { products.map( product => <Product key={product.name} title={product.name} source={product.source} onPress={() => this.onPress()} />) }
       </View>
     );

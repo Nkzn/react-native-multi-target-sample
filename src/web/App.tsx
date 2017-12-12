@@ -7,7 +7,7 @@ import Products from "../shared/Products";
 export default class App extends React.Component {
   render() {
     return (
-      <ScrollView contentContainerStyle={{ paddingVertical: 48 }}>
+      <ScrollView contentContainerStyle={{ paddingVertical: 48, paddingHorizontal: 16 }}>
         <Products />
       </ScrollView>
     );
