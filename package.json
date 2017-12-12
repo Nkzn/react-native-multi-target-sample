@@ -13,7 +13,10 @@
     "ts-loader": "^3.2.0",
     "typescript": "^2.6.2",
     "webpack": "^3.8.1",
-    "webpack-dev-server": "^2.9.5"
+    "webpack-dev-server": "^2.9.5",
+    "@storybook/react": "^3.2.17",
+    "@storybook/addon-actions": "^3.2.17",
+    "@storybook/addon-links": "^3.2.17"
   },
   "main": "./node_modules/react-native-scripts/build/bin/crna-entry.js",
   "scripts": {
@@ -26,7 +29,9 @@
     "eject": "react-native-scripts eject",
     "android": "react-native-scripts android",
     "ios": "react-native-scripts ios",
-    "test": "node node_modules/jest/bin/jest.js --watch"
+    "test": "node node_modules/jest/bin/jest.js --watch",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "jest": {
     "preset": "jest-expo"
