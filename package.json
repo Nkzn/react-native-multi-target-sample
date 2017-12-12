@@ -23,7 +23,7 @@
     "deploy": "yarn build:web && firebase deploy",
     "build:tsc": "rm -rf dist/* && tsc -p .",
     "start:tsc": "rm -rf dist/* && tsc -w -p .",
-    "build:web": "webpack --progress --config webpack.config.js",
+    "build:web": "webpack -p --progress --config webpack.config.js",
     "start:web": "webpack-dev-server -d --config webpack.config.js --inline --hot --colors",
     "start": "react-native-scripts start",
     "eject": "react-native-scripts eject",
